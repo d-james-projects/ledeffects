@@ -129,7 +129,7 @@ void setup()
    //initialize the buttonPin as output
    digitalWrite(buttonPin, HIGH); 
    FastLED.addLeds<WS2812B, PIN, COLOR_ORDER>(leds, N_PIXELS).setCorrection( TypicalLEDStrip );
-   FastLED.setBrightness(  BRIGHTNESS );
+   FastLED.setBrightness(BRIGHTNESS);
    LEDS.addLeds<LED_TYPE, PIN, COLOR_ORDER>(leds, N_PIXELS); 
    strip.begin();
    strip.show(); // Initialize all pixels to 'off'
